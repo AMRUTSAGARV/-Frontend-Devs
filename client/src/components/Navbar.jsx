@@ -22,7 +22,7 @@ window.addEventListener('scroll', changeBackground);
             <img src={logo} alt=''/>
         </Link>
 <input className='menu-btn' type='checkbox' id='menu-btn'/>
-<label className='menu-icon' for='menu-btn'>
+<label className='menu-icon' htmlFor='menu-btn'>
     <span className='nav-icon'></span>
 </label>
 
@@ -33,7 +33,7 @@ window.addEventListener('scroll', changeBackground);
 <li><Link to="#">Gyms</Link></li>
 <li><Link to="#">Become WTF Partner</Link></li>
 <li><Link to="#">About Us</Link></li>
-<li><Link to="#">Login</Link></li>
+<li className='login'><Link to="#">Login</Link></li>
 </ul>
 
     </nav>
