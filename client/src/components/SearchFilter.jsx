@@ -12,7 +12,7 @@ useEffect(() => {
 const loadPosts = async () => {
     setLoading(true);
     const res = await axios.get(
-        "https://jsonplaceholder.typicode.com/photos"
+        "https://jsonplaceholder.typicode.com/albums"
     );
     setPosts(res.data);
     setLoading(false)
@@ -23,7 +23,16 @@ loadPosts();
 
   return (
     <div className=''>
-        <input style={{ width:'80%', height:'45px',margin:'auto',display:'block'}} type="text" placeholder='Search...' onChange={(e) =>setSearchTitle(e.target.value)}/>
+
+
+<div className="wrapper">
+  <div className="search_box">
+  <input  type="text" placeholder='Search gym name here...' onChange={(e) =>setSearchTitle(e.target.value)}/>
+      <i className="fas fa-search"></i>
+  </div>
+</div>
+
+
 {loading ? (
 
 <h4>Loading...</h4>
